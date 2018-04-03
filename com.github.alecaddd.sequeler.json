@@ -33,6 +33,8 @@
     /* dconf */
     "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
     "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+    /* access localhost databases */
+    "--share=network"
   ],
   "modules": [{
       "name": "libgee",
