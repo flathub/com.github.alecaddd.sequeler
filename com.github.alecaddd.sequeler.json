@@ -28,6 +28,8 @@
     "--share=ipc", "--socket=x11",
     /* Wayland */
     "--socket=wayland",
+    /* Libsecret BUS */
+    "--talk-name=org.freedesktop.secrets",
     /* Filesystem*/
     "--filesystem=home",
     /* dconf */
@@ -172,14 +174,12 @@
     },
     {
       "name": "sequeler",
-      "buildsystem": "cmake",
-      "config-opts": [
-        "-DCMAKE_BUILD_TYPE=Release"
-      ],
+      "buildsystem": "meson",
+      "config-opts": ["--buildtype=release"],
       "sources": [{
         "type": "archive",
-        "url": "https://github.com/Alecaddd/sequeler/archive/v0.5.4.tar.gz",
-        "sha256": "6bb1f7a2947afc96da8c7606cb0abbee4460c128dfe917ffd5c998a47075086b"
+        "url": "https://github.com/Alecaddd/sequeler/archive/v0.5.5.tar.gz",
+        "sha256": "ac5cd238bffe3afaf1c931009f7737cf0f22ef072a5b6b977149b38f4f20782b"
       }]
     }
   ]
