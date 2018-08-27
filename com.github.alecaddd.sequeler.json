@@ -178,8 +178,8 @@
       "config-opts": ["--buildtype=release"],
       "sources": [{
         "type": "archive",
-        "url": "https://github.com/Alecaddd/sequeler/archive/v0.5.7.tar.gz",
-        "sha256": "0737f1388095cb2930374bd9a8822624556b48e2f3251f98505d3ccaa68e85c0"
+        "url": "https://github.com/Alecaddd/sequeler/archive/v0.6.0.tar.gz",
+        "sha256": "309bd42047d3473f8c0e55c0c04b2587a16b9c1407c2aaf2bcb8235fb661f712"
       }]
     }
   ]
