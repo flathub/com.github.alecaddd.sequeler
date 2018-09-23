@@ -1,8 +1,10 @@
 {
   "app-id": "com.github.alecaddd.sequeler",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.26",
+  "runtime-version": "3.28",
   "sdk": "org.gnome.Sdk",
+  "base":"io.elementary.Loki.BaseApp",
+  "base-version": "stable",
   "command": "com.github.alecaddd.sequeler",
   "build-options": {
     "cflags": "-O2",
@@ -13,8 +15,6 @@
     }
   },
   "cleanup": [
-    "/bin/granite-demo",
-    "/share/applications/granite-demo.desktop",
     "/include",
     "/lib/pkgconfig",
     "/lib/debug",
@@ -38,26 +38,7 @@
     /* access localhost databases */
     "--share=network"
   ],
-  "modules": [{
-      "name": "libgee",
-      "sources": [{
-        "type": "archive",
-        "url": "https://github.com/GNOME/libgee/archive/0.20.1.tar.gz",
-        "sha256": "d76d0bf8ae6659dba6018fadf2ccce218ccbc107666925552008806a29702c4b"
-      }]
-    },
-    {
-      "name": "granite",
-      "buildsystem": "cmake-ninja",
-      "config-opts": [
-        "-DCMAKE_BUILD_TYPE=Release"
-      ],
-      "sources": [{
-        "type": "archive",
-        "url": "https://github.com/elementary/granite/archive/0.5.tar.gz",
-        "sha256": "cc4905ae70fddeba3d2ded44bb642be77d419aa090251a7ab24c155b8616be06"
-      }]
-    },
+  "modules": [
     {
       "name": "libxml2",
       "build-options": {
@@ -178,8 +159,12 @@
       "config-opts": ["--buildtype=release"],
       "sources": [{
         "type": "archive",
-        "url": "https://github.com/Alecaddd/sequeler/archive/v0.6.1.tar.gz",
-        "sha256": "ed99d2c686b58718991c192a928f5fe5c0459946e1585c8b26fa922f5cf7d5e7"
+        "url": "https://github.com/Alecaddd/sequeler/archive/v0.6.2.tar.gz",
+        "sha256": "5fd37b8b004b7fb5991480e9c46affd9f196e4af986b03a903cf37a6b26d4480"
+      }, 
+      {
+        "type": "patch",
+        "path": "elementary-theme.patch"
       }]
     }
   ]
