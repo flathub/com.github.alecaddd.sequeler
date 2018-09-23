@@ -1,7 +1,7 @@
 {
   "app-id": "com.github.alecaddd.sequeler",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.26",
+  "runtime-version": "3.28",
   "sdk": "org.gnome.Sdk",
   "command": "com.github.alecaddd.sequeler",
   "build-options": {
