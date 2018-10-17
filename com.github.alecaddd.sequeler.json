@@ -1,19 +1,11 @@
 {
   "app-id": "com.github.alecaddd.sequeler",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.28",
+  "runtime-version": "3.30",
   "sdk": "org.gnome.Sdk",
-  "base":"io.elementary.Loki.BaseApp",
-  "base-version": "stable",
+  "base":"io.elementary.BaseApp",
+  "base-version": "juno",
   "command": "com.github.alecaddd.sequeler",
-  "build-options": {
-    "cflags": "-O2",
-    "cxxflags": "-O2",
-    "env": {
-      "PKG_CONFIG_GOBJECT_INTROSPECTION_1_0_GIRDIR": "/app/share/gir-1.0",
-      "PKG_CONFIG_GOBJECT_INTROSPECTION_1_0_TYPELIBDIR": "/app/lib/girepository-1.0"
-    }
-  },
   "cleanup": [
     "/include",
     "/lib/pkgconfig",
