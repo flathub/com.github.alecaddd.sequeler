@@ -65,7 +65,7 @@
           "--with-perl=no",
           "--with-libxml",
           "--with-openssl",
-          "--with-tcl"
+          "--no-tcl"
         ]
       },
       "sources": [{
