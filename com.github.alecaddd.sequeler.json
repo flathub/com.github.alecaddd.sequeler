@@ -140,8 +140,8 @@
       },
       "sources": [{
         "type": "archive",
-        "url": "https://download.gnome.org/sources/libgda/5.2/libgda-5.2.5.tar.xz",
-        "sha256": "e3d2e4c28c08a22efd520767fa9d16e92cc1821f693261d7cb2892cc23ec90c8"
+        "url": "https://download.gnome.org/sources/libgda/5.2/libgda-5.2.8.tar.xz",
+        "sha256": "e2876d987c00783ac3c1358e9da52794ac26f557e262194fcba60ac88bafa445"
       }]
     },
     {
