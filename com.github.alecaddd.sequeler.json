@@ -109,6 +109,10 @@
       "name": "mariadb",
       "buildsystem": "cmake",
       "no-make-install": true,
+      "build-options": {
+          "cflags": "-fPIC -fno-strict-aliasing -DBIG_JOINS=1 -fomit-frame-pointer -fno-delete-null-pointer-checks",
+          "cxxflags": "-fPIC -fno-strict-aliasing -DBIG_JOINS=1 -felide-constructors -fno-rtti -fno-delete-null-pointer-checks"
+      },
       "config-opts": [
         "-DCMAKE_BUILD_TYPE=Release",
         "-DBUILD_CONFIG=mysql_release",
@@ -119,9 +123,7 @@
         "-DWITHOUT_TOKUDB=1",
         "-DWITHOUT_EXAMPLE_STORAGE_ENGINE=1",
         "-DWITHOUT_FEDERATED_STORAGE_ENGINE=1",
-        "-DWITHOUT_PBXT_STORAGE_ENGINE=1",
-        "-DCMAKE_C_FLAGS='-fPIC -fno-strict-aliasing -DBIG_JOINS=1 -fomit-frame-pointer -fno-delete-null-pointer-checks'",
-        "-DCMAKE_CXX_FLAGS='-fPIC -fno-strict-aliasing -DBIG_JOINS=1 -felide-constructors -fno-rtti -fno-delete-null-pointer-checks'"
+        "-DWITHOUT_PBXT_STORAGE_ENGINE=1"
       ],
       "post-install": [
         "make -C libmysql install",
