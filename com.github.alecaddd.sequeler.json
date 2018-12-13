@@ -109,10 +109,6 @@
       "name": "mariadb",
       "buildsystem": "cmake",
       "no-make-install": true,
-      "build-options": {
-          "cflags": "-fPIC -fno-strict-aliasing -DBIG_JOINS=1 -fomit-frame-pointer -fno-delete-null-pointer-checks",
-          "cxxflags": "-fPIC -fno-strict-aliasing -DBIG_JOINS=1 -felide-constructors -fno-rtti -fno-delete-null-pointer-checks"
-      },
       "config-opts": [
         "-DCMAKE_BUILD_TYPE=Release",
         "-DBUILD_CONFIG=mysql_release",
@@ -136,8 +132,8 @@
       ],
       "sources": [{
         "type": "archive",
-        "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.4.0/source/mariadb-10.4.0.tar.gz",
-        "sha256": "ff3ec1aa59073c2789369d54e1dc106d4d178f5e770065fbf3ec2631e6b3e861"
+        "url": "https://mirrors.n-ix.net/mariadb/mariadb-10.3.11/source/mariadb-10.3.11.tar.gz",
+        "sha256": "211655b794c9d5397ba3be6c90737eac02e882f296268299239db47ba328f1b2"
       }]
     },
     {
