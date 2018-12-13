@@ -69,8 +69,8 @@
       },
       "sources": [{
         "type": "archive",
-        "url": "https://ftp.postgresql.org/pub/source/v10.5/postgresql-10.5.tar.bz2",
-        "sha256": "6c8e616c91a45142b85c0aeb1f29ebba4a361309e86469e0fb4617b6a73c4011"
+        "url": "https://ftp.postgresql.org/pub/source/v11.1/postgresql-11.1.tar.gz",
+        "sha256": "0250d27c53bd28cce4b85e1bfb8903f8023071ef4ed50ee867d6cee1b2890259"
       }]
     },
     {
@@ -81,8 +81,8 @@
       ],
       "sources": [{
         "type": "archive",
-        "url": "https://github.com/jemalloc/jemalloc/releases/download/4.5.0/jemalloc-4.5.0.tar.bz2",
-        "sha256": "9409d85664b4f135b77518b0b118c549009dc10f6cba14557d170476611f6780"
+        "url": "https://github.com/jemalloc/jemalloc/releases/download/5.1.0/jemalloc-5.1.0.tar.bz2",
+        "sha256": "5396e61cc6103ac393136c309fae09e44d74743c86f90e266948c50f3dbb7268"
       }]
     },
     {
@@ -101,8 +101,8 @@
       ],
       "sources": [{
         "type": "archive",
-        "url": "http://ftp.de.debian.org/debian/pool/main/liba/libaio/libaio_0.3.110.orig.tar.gz",
-        "sha256": "e019028e631725729376250e32b473012f7cb68e1f7275bfc1bbcdd0f8745f7e"
+        "url": "http://ftp.de.debian.org/debian/pool/main/liba/libaio/libaio_0.3.111.orig.tar.gz",
+        "sha256": "62cf871ad8fd09eb3418f00aca7a7d449299b8e1de31c65f28bf6a2ef1fa502a"
       }]
     },
     {
@@ -132,8 +132,8 @@
       ],
       "sources": [{
         "type": "archive",
-        "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.1.24/source/mariadb-10.1.24.tar.gz",
-        "sha256": "b3df99ae5b1ec8cf6cede4cbc4ae3f54ce66464549cba6d56d9ff4d24e4d551e"
+        "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.4.0/source/mariadb-10.4.0.tar.gz",
+        "sha256": "ff3ec1aa59073c2789369d54e1dc106d4d178f5e770065fbf3ec2631e6b3e861"
       }]
     },
     {
