@@ -22,8 +22,6 @@
     "--socket=wayland",
     /* Libsecret BUS */
     "--talk-name=org.freedesktop.secrets",
-    /* Filesystem*/
-    "--filesystem=home",
     /* dconf */
     "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
     "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
@@ -157,8 +155,8 @@
       "config-opts": ["--buildtype=release"],
       "sources": [{
         "type": "archive",
-        "url": "https://github.com/Alecaddd/sequeler/archive/v0.6.4.tar.gz",
-        "sha256": "ad0ee422fce308b4b27698c2a7e3bace44e8fe7e924b80094247c98d2c7267e7"
+        "url": "https://github.com/Alecaddd/sequeler/archive/v0.6.5.tar.gz",
+        "sha256": "8075b03fb1be1769f2551e65dbfc2db61c6f2ed20b0b358903297441dd85bd22"
       }, 
       {
         "type": "patch",
