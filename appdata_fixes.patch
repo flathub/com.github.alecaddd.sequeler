@@ -1,0 +1,11 @@
+--- a/data/com.github.alecaddd.sequeler.appdata.xml.in.in	2019-10-12 02:04:57.015156891 +0200
++++ b/data/com.github.alecaddd.sequeler.appdata.xml.in.in	2019-10-12 02:05:05.818009728 +0200
+@@ -23,7 +23,7 @@
+ 			<li>PostgreSQL</li>
+ 		</ul>
+ 		<p>
+-			Features Include:
++			The Application Features List Include:
+ 		</p>
+ 		<ul>
+ 			<li>Test Connections before saving them</li>
