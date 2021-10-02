@@ -30,19 +30,7 @@
     "*.a",
     "*.la"
   ],
-  "modules": [{
-      "name": "libxml2",
-      "build-options": {
-        "config-opts": [
-          "--with-python=no"
-        ]
-      },
-      "sources": [{
-        "type": "archive",
-        "url": "https://github.com/GNOME/libxml2/archive/v2.9.10.tar.gz",
-        "sha256": "3bdffb4d728e4dc135b3210bf2a2cebb76548b820a5617c68abb7b83654066dd"
-      }]
-    },
+  "modules": [
     {
       "name": "gtksourceview",
       "build-options": {
@@ -67,7 +55,7 @@
       },
       "sources": [{
         "type": "archive",
-        "url": "hhttps://download-fallback.gnome.org/sources/libgda/5.2/libgda-5.2.9.tar.xz",
+        "url": "https://download-fallback.gnome.org/sources/libgda/5.2/libgda-5.2.9.tar.xz",
         "sha256": "59caed8ca72b1ac6437c9844f0677f8a296d52cfd1c0049116026abfb1d87d9b"
       }],
       "modules": [{
@@ -183,8 +171,8 @@
       "config-opts": ["--buildtype=release"],
       "sources": [{
           "type": "archive",
-          "url": "https://github.com/Alecaddd/sequeler/archive/v0.8.0.tar.gz",
-          "sha256": "471fdf63fda568d4caddf6182897518e4b7abc1b4f5dfb466bd1dfc86d380f0c"
+          "url": "https://github.com/Alecaddd/sequeler/archive/v0.8.2.tar.gz",
+          "sha256": "66ae40d8fc6bf5aa0f5608ffc32c3b66c2ff78deb675d301112a8eca7f050876"
         },
         {
           "type": "patch",
