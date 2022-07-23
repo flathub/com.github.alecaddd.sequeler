@@ -134,8 +134,8 @@
           ],
           "sources": [{
             "type": "archive",
-            "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.1.48/source/mariadb-10.1.48.tar.gz",
-            "sha256": "069d58b1e2c06bb1e6c31249eda34138f41fb8ae3dec7ecaeba8035812c87cf9"
+            "url": "http://ftp.hosteurope.de/mirror/archive.mariadb.org/mariadb-10.9.1/source/mariadb-10.9.1.tar.gz",
+            "sha256": "c979bd6641e1dffde34cfb969a14411607ad09bfe5a252d9a8b76c313dbf6736"
           }]
         },
         "shared-modules/intltool/intltool-0.51.json"
