@@ -1,10 +1,10 @@
 {
   "id": "com.github.alecaddd.sequeler",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "46",
+  "runtime-version": "48",
   "sdk": "org.gnome.Sdk",
   "base": "io.elementary.BaseApp",
-  "base-version": "juno-23.08",
+  "base-version": "circe-24.08",
   "command": "com.github.alecaddd.sequeler",
   "finish-args": [
     "--share=ipc",
@@ -30,7 +30,8 @@
       "build-options": {
         "config-opts": [
           "--enable-gtk-doc=no"
-        ]
+        ],
+        "cflags": "-Wno-error=incompatible-pointer-types"
       },
       "sources": [
         {
@@ -47,7 +48,8 @@
           "--with-java=no",
           "--with-jni=no",
           "--with-oracle=no"
-        ]
+        ],
+        "cflags": "-Wno-error=incompatible-pointer-types -Wno-error=implicit-function-declaration"
       },
       "sources": [
         {
@@ -65,7 +67,8 @@
               "--with-perl=no",
               "--with-libxml",
               "--with-openssl"
-            ]
+            ],
+            "cflags": "-Wno-error=incompatible-pointer-types"
           },
           "sources": [
             {
