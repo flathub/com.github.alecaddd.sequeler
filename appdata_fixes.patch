@@ -1,5 +1,7 @@
---- a/data/com.github.alecaddd.sequeler.appdata.xml.in.in	2019-10-12 02:04:57.015156891 +0200
-+++ b/data/com.github.alecaddd.sequeler.appdata.xml.in.in	2019-10-12 02:05:05.818009728 +0200
+diff --git a/data/com.github.alecaddd.sequeler.appdata.xml.in.in b/data/com.github.alecaddd.sequeler.appdata.xml.in.in
+index 97314ff..1a62586 100644
+--- a/data/com.github.alecaddd.sequeler.appdata.xml.in.in
++++ b/data/com.github.alecaddd.sequeler.appdata.xml.in.in
 @@ -23,7 +23,7 @@
  			<li>PostgreSQL</li>
  		</ul>
@@ -9,3 +11,20 @@
  		</p>
  		<ul>
  			<li>Test Connections before saving them</li>
+@@ -501,13 +501,13 @@
+ 	</releases>
+ 	<screenshots>
+ 		<screenshot type="default">
+-			<image>https://raw.githubusercontent.com/Alecaddd/sequeler/master/data/assets/screenshots/sequeler-screenshot.png</image>
++			<image>https://raw.githubusercontent.com/Alecaddd/sequeler/v0.8.2/data/assets/screenshots/sequeler-screenshot.png</image>
+ 		</screenshot>
+ 		<screenshot>
+-			<image>https://raw.githubusercontent.com/Alecaddd/sequeler/master/data/assets/screenshots/sequeler-screenshot1.png</image>
++			<image>https://raw.githubusercontent.com/Alecaddd/sequeler/v0.8.2/data/assets/screenshots/sequeler-screenshot1.png</image>
+ 		</screenshot>
+ 		<screenshot>
+-			<image>https://raw.githubusercontent.com/Alecaddd/sequeler/master/data/assets/screenshots/sequeler-screenshot2.png</image>
++			<image>https://raw.githubusercontent.com/Alecaddd/sequeler/v0.8.2/data/assets/screenshots/sequeler-screenshot2.png</image>
+ 		</screenshot>
+ 	</screenshots>
+ 	<developer_name>Alessandro Castellani</developer_name>

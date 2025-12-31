@@ -1,10 +1,10 @@
 {
   "id": "com.github.alecaddd.sequeler",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "46",
+  "runtime-version": "48",
   "sdk": "org.gnome.Sdk",
   "base": "io.elementary.BaseApp",
-  "base-version": "juno-23.08",
+  "base-version": "circe-24.08",
   "command": "com.github.alecaddd.sequeler",
   "finish-args": [
     "--share=ipc",
@@ -30,7 +30,8 @@
       "build-options": {
         "config-opts": [
           "--enable-gtk-doc=no"
-        ]
+        ],
+        "cflags": "-Wno-error=incompatible-pointer-types"
       },
       "sources": [
         {
@@ -47,12 +48,13 @@
           "--with-java=no",
           "--with-jni=no",
           "--with-oracle=no"
-        ]
+        ],
+        "cflags": "-Wno-error=incompatible-pointer-types -Wno-error=implicit-function-declaration"
       },
       "sources": [
         {
           "type": "archive",
-          "url": "https://download-fallback.gnome.org/sources/libgda/5.2/libgda-5.2.9.tar.xz",
+          "url": "https://download.gnome.org/sources/libgda/5.2/libgda-5.2.9.tar.xz",
           "sha256": "59caed8ca72b1ac6437c9844f0677f8a296d52cfd1c0049116026abfb1d87d9b"
         }
       ],
@@ -65,7 +67,8 @@
               "--with-perl=no",
               "--with-libxml",
               "--with-openssl"
-            ]
+            ],
+            "cflags": "-Wno-error=incompatible-pointer-types"
           },
           "sources": [
             {
@@ -187,6 +190,11 @@
       "buildsystem": "meson",
       "config-opts": [
         "--buildtype=release"
+      ],
+      "post-install" : [
+        "mkdir -p /app/share/icons/hicolor/scalable/apps",
+        "mv /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+        "find /app/share/icons/hicolor -type f -not -path \"*scalable*\" -not -path \"*actions*\" -name \"*.svg\" -delete"
       ],
       "sources": [
         {
